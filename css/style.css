@@ -1,0 +1,103 @@
+/* ===============
+globals
+=============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "monospace", sans-serif;
+  line-height: 1.6;
+  background: #eee;
+  color: #333; }
+
+/* ===============
+components
+=============== */
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius-bottom: 10px; }
+  nav .nav-list {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    list-style-type: none; }
+    nav .nav-list .nav-item {
+      background: #303F9F;
+      display: block;
+      width: 100%;
+      height: 100%; }
+  nav .nav-link {
+    display: block;
+    padding: 20px 15px;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none; }
+    nav .nav-link:hover, nav .nav-link:focus {
+      background: #202F7F;
+      text-decoration: underline; }
+
+section#about {
+  padding: 20px;
+  margin: auto;
+  border-bottom: 1px black solid; }
+  section#about h2 {
+    margin-bottom: 1rem; }
+  section#about p {
+    border: 0.7px #999 solid;
+    border-radius: 10px;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    color: #555; }
+
+section#math-form1 {
+  padding: 20px;
+  margin: 10px auto;
+  border: 1px #999 double;
+  border-radius: 15px;
+  width: 95%;
+  background: #eee; }
+  section#math-form1 h2 {
+    margin-bottom: 1rem; }
+  section#math-form1 span {
+    display: block; }
+    section#math-form1 span:after {
+      content: ":"; }
+  section#math-form1 input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 7px;
+    font-family: "monospace";
+    margin-bottom: 0.3rem;
+    outline: none; }
+    section#math-form1 input:focus {
+      box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
+  section#math-form1 #submit {
+    margin-top: 10px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 0.3rem;
+    border-radius: 0.1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    user-select: none;
+    cursor: pointer; }
+    section#math-form1 #submit:hover, section#math-form1 #submit:focus {
+      background: #ddd;
+      box-shadow: 0px 0px 1px 1px rgba(23, 160, 255, 0.54); }
+
+/*# sourceMappingURL=style.css.map */
