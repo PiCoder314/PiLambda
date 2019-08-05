@@ -43,6 +43,8 @@ nav {
     nav .nav-link:hover, nav .nav-link:focus {
       background: #202F7F;
       text-decoration: underline; }
+    nav .nav-link.active {
+      background: #202F7F; }
 
 section#about {
   padding: 20px;
@@ -86,7 +88,8 @@ section#math-form1, section#math-form2, section#math-form3 {
     padding: 7px;
     font-family: "monospace";
     margin-bottom: 0.3rem;
-    outline: none; }
+    outline: none;
+    transition: all 0.5s ease-in-out 0s; }
     section#math-form1 input:focus, section#math-form2 input:focus, section#math-form3 input:focus {
       box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
   section#math-form1 select, section#math-form2 select, section#math-form3 select {
@@ -97,7 +100,8 @@ section#math-form1, section#math-form2, section#math-form3 {
     border-radius: 5px;
     background: #fff;
     outline: none;
-    border: 1px solid black; }
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out 0s; }
     section#math-form1 select:focus, section#math-form2 select:focus, section#math-form3 select:focus {
       box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
 
@@ -112,10 +116,11 @@ section#math-form1, section#math-form2, section#math-form3 {
   text-align: center;
   font-size: 0.7rem;
   user-select: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0s; }
   #submit1:hover, #submit1:focus, #submit2:hover, #submit2:focus {
-    background: #ddd;
-    box-shadow: 0px 0px 1px 1px rgba(23, 160, 255, 0.54); }
+    background: #fff;
+    box-shadow: 0px 0px 4px 1px rgba(23, 160, 255, 0.54); }
 
 @media only screen and (min-width: 768px) {
   nav .nav-list {

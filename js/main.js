@@ -6,6 +6,18 @@ function sigma(initial, end, content) {
 }
 function si_int() {
   var inputs = document.getElementById('si_interest').elements;
+  var spec = false;
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].nodeName == "INPUT" && !inputs[i].hasAttribute("disabled")) {
+      if (+inputs[i].value) {
+        inputs[i].style.boxShadow = "";
+      } else {
+        inputs[i].style.boxShadow = "0px 0px 4px 2px red";
+        if (!spec) { spec = true }
+      }
+    }
+  }
+  if (spec) {inputs[5].value = "Input valid values"; return}
   switch(inputs[2].value) {
     case "Monthly":
       mR = 12
@@ -34,6 +46,18 @@ function si_int() {
 // Compound Interest
 function ci_int() {
   var inputs = document.getElementById('comp_interest').elements;
+  var spec = false;
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].nodeName == "INPUT" && !inputs[i].hasAttribute("disabled")) {
+      if (+inputs[i].value) {
+        inputs[i].style.boxShadow = "";
+      } else {
+        inputs[i].style.boxShadow = "0px 0px 4px 2px red";
+        if (!spec) { spec = true }
+      }
+    }
+  }
+  if (spec) {inputs[6].value = "Input valid values"; return}
   switch(inputs[2].value) {
     case "Monthly":
       mR = 12
@@ -71,7 +95,7 @@ function ci_int() {
   CI *= P
   //alert(R)
   //alert(T)
-inputs[6].value = (CI*100)/100;
+  inputs[6].value = (CI*100)/100;
 };
 document.getElementById('submit1').addEventListener('click', si_int);
 document.getElementById('submit2').addEventListener('click', ci_int);
