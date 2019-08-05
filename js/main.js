@@ -95,7 +95,7 @@ function ci_int() {
   CI *= P
   //alert(R)
   //alert(T)
-  inputs[6].value = (CI*100)/100;
+  inputs[6].value = Math.round(CI*100)/100;
 };
 document.getElementById('submit1').addEventListener('click', si_int);
 document.getElementById('submit2').addEventListener('click', ci_int);
