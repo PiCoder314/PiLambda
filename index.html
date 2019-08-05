@@ -16,7 +16,7 @@
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+        <li class="nav-item right"><a class="nav-link" href="#about">about</a></li>
       </ul>
     </nav>
     <main>
@@ -24,7 +24,8 @@
         <h2>About Us</h2>
         <p>PiLambda we provide mathematical tools for everyone from data analysts to scientists.</p>
       </section>
-      <section id="math-form1">
+      <div class="grid">
+      <section class="box" id="math-form1">
         <h2>Simple Interest</h2>
         <form id="si_interest" action="">
           <span class="label">Principle</span>
@@ -50,8 +51,7 @@
         </form>
         <a id="submit1">submit</a>
       </section>
-      <hr/>
-      <section id="math-form2">
+      <section class="box" id="math-form2">
         <h2>Compound Interest</h2>
         <form id="comp_interest" action="">
           <span class="label">Principle</span>
@@ -84,6 +84,11 @@
         </form>
         <a id="submit2">submit</a>
       </section>
+      <section id="math-form3"></section>
+      <hr>
+      <hr>
+      <hr>
+</div>
     </main>
     <script src="js/main.js"></script>
   </body>

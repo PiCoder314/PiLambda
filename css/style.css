@@ -20,17 +20,14 @@ components
 =============== */
 nav {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   border-radius-bottom: 10px; }
   nav .nav-list {
     width: 100%;
     height: 100%;
     background: #333;
-    list-style-type: none; }
+    list-style-type: none;
+    background: #303F9F; }
     nav .nav-list .nav-item {
-      background: #303F9F;
       display: block;
       width: 100%;
       height: 100%; }
@@ -60,28 +57,28 @@ section#about {
     font-size: 0.8rem;
     color: #555; }
 
-section#math-form1, section#math-form2 {
+section#math-form1, section#math-form2, section#math-form3 {
   padding: 20px;
   margin: 10px auto;
   border: 1px #999 double;
   border-radius: 15px;
   width: 95%;
   background: #eee; }
-  section#math-form1 h2, section#math-form2 h2 {
+  section#math-form1 h2, section#math-form2 h2, section#math-form3 h2 {
     margin-bottom: 1rem; }
-  section#math-form1 span.label, section#math-form2 span.label {
+  section#math-form1 span.label, section#math-form2 span.label, section#math-form3 span.label {
     display: block; }
-    section#math-form1 span.label:after, section#math-form2 span.label:after {
+    section#math-form1 span.label:after, section#math-form2 span.label:after, section#math-form3 span.label:after {
       content: ":"; }
-  section#math-form1 .wrapper, section#math-form2 .wrapper {
+  section#math-form1 .wrapper, section#math-form2 .wrapper, section#math-form3 .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    section#math-form1 .wrapper input, section#math-form2 .wrapper input {
+    section#math-form1 .wrapper input, section#math-form2 .wrapper input, section#math-form3 .wrapper input {
       width: 68%; }
-    section#math-form1 .wrapper select, section#math-form2 .wrapper select {
+    section#math-form1 .wrapper select, section#math-form2 .wrapper select, section#math-form3 .wrapper select {
       width: 30%; }
-  section#math-form1 input, section#math-form2 input {
+  section#math-form1 input, section#math-form2 input, section#math-form3 input {
     border-radius: 5px;
     height: 2rem;
     border: 1px solid black;
@@ -90,9 +87,9 @@ section#math-form1, section#math-form2 {
     font-family: "monospace";
     margin-bottom: 0.3rem;
     outline: none; }
-    section#math-form1 input:focus, section#math-form2 input:focus {
+    section#math-form1 input:focus, section#math-form2 input:focus, section#math-form3 input:focus {
       box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
-  section#math-form1 select, section#math-form2 select {
+  section#math-form1 select, section#math-form2 select, section#math-form3 select {
     padding: 7px;
     width: 100%;
     font-family: "monospace";
@@ -101,7 +98,7 @@ section#math-form1, section#math-form2 {
     background: #fff;
     outline: none;
     border: 1px solid black; }
-    section#math-form1 select:focus, section#math-form2 select:focus {
+    section#math-form1 select:focus, section#math-form2 select:focus, section#math-form3 select:focus {
       box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
 
 #submit1, #submit2 {
@@ -119,5 +116,21 @@ section#math-form1, section#math-form2 {
   #submit1:hover, #submit1:focus, #submit2:hover, #submit2:focus {
     background: #ddd;
     box-shadow: 0px 0px 1px 1px rgba(23, 160, 255, 0.54); }
+
+@media only screen and (min-width: 768px) {
+  nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    nav .nav-list .nav-item {
+      width: auto;
+      display: inline-block;
+      margin: 0px; }
+    nav .nav-list .right {
+      margin-left: auto; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
 
 /*# sourceMappingURL=style.css.map */

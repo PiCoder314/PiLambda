@@ -1,4 +1,9 @@
 // Simple Interest
+function sigma(initial, end, content) {
+  if (content === "function") {
+    alert("func")
+  }
+}
 function si_int() {
   var inputs = document.getElementById('si_interest').elements;
   switch(inputs[2].value) {
