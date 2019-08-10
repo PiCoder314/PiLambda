@@ -10,7 +10,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: "monospace", sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background: #eee;
   color: #333; }
@@ -32,6 +32,7 @@ nav {
       width: 100%;
       height: 100%; }
   nav .nav-link {
+    font-weight: bold;
     display: block;
     padding: 20px 15px;
     width: 100%;
@@ -51,7 +52,8 @@ section#about {
   margin: auto;
   border-bottom: 1px black solid; }
   section#about h2 {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-weight: bold; }
   section#about p {
     border: 0.7px #999 solid;
     border-radius: 10px;
@@ -67,8 +69,10 @@ section#math-form1, section#math-form2, section#math-form3 {
   width: 95%;
   background: #eee; }
   section#math-form1 h2, section#math-form2 h2, section#math-form3 h2 {
+    font-weight: bold;
     margin-bottom: 1rem; }
   section#math-form1 span.label, section#math-form2 span.label, section#math-form3 span.label {
+    font-weight: bold;
     display: block; }
     section#math-form1 span.label:after, section#math-form2 span.label:after, section#math-form3 span.label:after {
       content: ":"; }
@@ -86,7 +90,7 @@ section#math-form1, section#math-form2, section#math-form3 {
     border: 1px solid black;
     width: 100%;
     padding: 7px;
-    font-family: "monospace";
+    font-family: "Nunito";
     margin-bottom: 0.3rem;
     outline: none;
     transition: all 0.5s ease-in-out 0s; }
@@ -95,7 +99,7 @@ section#math-form1, section#math-form2, section#math-form3 {
   section#math-form1 select, section#math-form2 select, section#math-form3 select {
     padding: 7px;
     width: 100%;
-    font-family: "monospace";
+    font-family: "Nunito";
     height: 2rem;
     border-radius: 5px;
     background: #fff;
@@ -105,7 +109,7 @@ section#math-form1, section#math-form2, section#math-form3 {
     section#math-form1 select:focus, section#math-form2 select:focus, section#math-form3 select:focus {
       box-shadow: 0px 0px 2px 4px rgba(255, 160, 23, 0.54); }
 
-#submit1, #submit2 {
+#submit1, #submit2, #submit3 {
   margin-top: 10px;
   text-transform: uppercase;
   border: 1px solid black;
@@ -118,7 +122,7 @@ section#math-form1, section#math-form2, section#math-form3 {
   user-select: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out 0s; }
-  #submit1:hover, #submit1:focus, #submit2:hover, #submit2:focus {
+  #submit1:hover, #submit1:focus, #submit2:hover, #submit2:focus, #submit3:hover, #submit3:focus {
     background: #fff;
     box-shadow: 0px 0px 4px 1px rgba(23, 160, 255, 0.54); }
 
