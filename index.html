@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="theme-color" content="#111">
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta charset="UTF-8">
+    <meta
+      name="generator"
+      content="HTML Tidy for HTML5 for Linux version 5.7.28"
+    />
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <!--<script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>-->
     <title>PiLambda</title>
@@ -15,106 +24,148 @@
   <body>
     <nav>
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-        <li class="nav-item right"><a class="nav-link" href="#about">about</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+        <li class="nav-item right">
+          <a class="nav-link" href="#about">about</a>
+        </li>
       </ul>
     </nav>
     <main>
       <section id="about">
         <h2>About Us</h2>
-        <p>PiLambda we provide mathematical tools for everyone from data analysts to scientists.</p>
+        <p>
+          PiLambda we provide mathematical tools for everyone from data analysts
+          to scientists.
+        </p>
       </section>
       <div class="grid">
-      <section class="box" id="math-form1">
-        <h2>Simple Interest</h2>
-        <form id="si_interest" action="">
-          <span class="label">Principle</span>
-          <input type="input" oninput="si_int()">
+        <section class="box" id="math-form1">
+          <h2>Simple Interest</h2>
+          <form id="si_interest" action="" name="si_interest">
+            <span class="label">Principle</span>
+            <input type="input" oninput="si_int()" />
             <span class="label">Rate Of Interest</span>
-          <div class="wrapper">
-            <input type="input" oninput="si_int()">
-          <select name="Time" oninput="si_int()">
-            <option value="Monthly">Monthly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
-          </div>
-          <span class="label">Time(in)</span>
-          <div class="wrapper">
-          <input type="input" oninput="si_int()">
-          <select name="Time" onchange="si_int()">
-            <option value="Months">Month(s)</option>
-            <option value="Years">Year(s)</option>
-          </select>
-          </div>
-          <span class="label">Amount</span>
-          <input type="input" disabled>
-        </form>
-        <a id="submit1">submit</a>
-      </section>
-      <section class="box" id="math-form2">
-        <h2>Compound Interest</h2>
-        <form id="comp_interest" action="">
-          <span class="label">Principle</span>
-          <input type="input" oninput="ci_int()">
+            <div class="wrapper">
+              <input type="input" oninput="si_int()" />
+              <select name="Time" oninput="si_int()">
+                <option value="Monthly">
+                  Monthly
+                </option>
+                <option value="Yearly">
+                  Yearly
+                </option>
+              </select>
+            </div>
+            <span class="label">Time(in)</span>
+            <div class="wrapper">
+              <input type="input" oninput="si_int()" />
+              <select name="Time" onchange="si_int()">
+                <option value="Months">
+                  Month(s)
+                </option>
+                <option value="Years">
+                  Year(s)
+                </option>
+              </select>
+            </div>
+            <span class="label">Amount</span> <input type="input" disabled />
+          </form>
+          <a id="submit1">submit</a>
+        </section>
+        <section class="box" id="math-form2">
+          <h2>Compound Interest</h2>
+          <form id="comp_interest" action="" name="comp_interest">
+            <span class="label">Principle</span>
+            <input type="input" oninput="ci_int()" />
             <span class="label">Rate Of Interest</span>
-          <div class="wrapper">
-            <input type="input" oninput="ci_int()">
-          <select name="Time" onchange="ci_int()">
-            <option value="Monthly">Monthly</option>
-            <option value="Quarterly">Quarterly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
-          </div>
-          <span class="label">Time(in)</span>
-          <div class="wrapper">
-          <input type="input" oninput="ci_int()">
-          <select name="Time" oninput="ci_int()">
-            <option value="Months">Month(s)</option>
-            <option value="Years">Year(s)</option>
-          </select>
-          </div>
-          <span class="label">Compounded</span>
-          <select name="Compounded" onchange="ci_int()">
-            <option value="Monthly">Monthly</option>
-            <option value="Quarterly">Quarterly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
-          <span class="label">Amount</span>
-          <input type="input" disabled>
-        </form>
-        <a id="submit2">submit</a>
-      </section>
-      <section id="math-form3">
-        <h2>Money Multiplier</h2>
-        <form id="mult_money" action="">
-          <span class="label">Principle</span>
-          <input type="input" oninput="mult_money()">
+            <div class="wrapper">
+              <input type="input" oninput="ci_int()" />
+              <select name="Time" onchange="ci_int()">
+                <option value="Monthly">
+                  Monthly
+                </option>
+                <option value="Quarterly">
+                  Quarterly
+                </option>
+                <option value="Yearly">
+                  Yearly
+                </option>
+              </select>
+            </div>
+            <span class="label">Time(in)</span>
+            <div class="wrapper">
+              <input type="input" oninput="ci_int()" />
+              <select name="Time" oninput="ci_int()">
+                <option value="Months">
+                  Month(s)
+                </option>
+                <option value="Years">
+                  Year(s)
+                </option>
+              </select>
+            </div>
+            <span class="label">Compounded</span>
+            <select name="Compounded" onchange="ci_int()">
+              <option value="Monthly">
+                Monthly
+              </option>
+              <option value="Quarterly">
+                Quarterly
+              </option>
+              <option value="Yearly">
+                Yearly
+              </option>
+            </select>
+            <span class="label">Amount</span> <input type="input" disabled />
+          </form>
+          <a id="submit2">submit</a>
+        </section>
+        <section id="math-form3">
+          <h2>Money Multiplier</h2>
+          <form id="mult_money" action="" name="mult_money">
+            <span class="label">Principle</span>
+            <input type="input" oninput="mult_money()" />
             <span class="label">Rate Of Interest</span>
-          <div class="wrapper">
-            <input type="input" oninput="mult_money()">
-          <select name="Time" onchange="mult_money()">
-            <option value="Monthly">Monthly</option>
-            <option value="Quarterly">Quarterly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
-          </div>
-          <span class="label">Multiplier(&times;)</span>
-          <input type="input" value=2>
-          <select name="Method" onchange="mult_money()">
-            <option value="CI">Compound Interest</option>
-            <option value="SI">Simple Interest</option>
-          </select>
-          <span class="label">Time</span>
-          <input type="input" disabled>
-        </form>
-        <a id="submit3">submit</a>
-      </section>
-      <hr>
-      <hr>
-      <hr>
-</div>
+            <div class="wrapper">
+              <input type="input" oninput="mult_money()" />
+              <select name="Time" onchange="mult_money()">
+                <option value="Monthly">
+                  Monthly
+                </option>
+                <option value="Quarterly">
+                  Quarterly
+                </option>
+                <option value="Yearly">
+                  Yearly
+                </option>
+              </select>
+            </div>
+            <span class="label">Multiplier(×)</span>
+            <input type="input" value="2" />
+            <select name="Method" onchange="mult_money()">
+              <option value="CI">
+                Compound Interest
+              </option>
+              <option value="SI">
+                Simple Interest
+              </option>
+            </select>
+            <span class="label">Time</span> <input type="input" disabled />
+          </form>
+          <a id="submit3">submit</a>
+        </section>
+        <hr />
+        <hr />
+        <hr />
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>
