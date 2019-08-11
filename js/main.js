@@ -14,11 +14,11 @@ function round(num, scale) {
     );
   }
 }
-function sigma(initial, end, content) {
+/*function sigma(initial, end, content) {
   if (content === "function") {
     alert("func");
   }
-}
+}*/
 function getBaseLog(x, y) {
   return Math.log(x) / Math.log(y);
 }
@@ -42,6 +42,7 @@ function si_int() {
     inputs[5].value = "Input valid values";
     return;
   }
+  var mR;
   switch (inputs[2].value) {
     case "Monthly":
       mR = 12;
@@ -53,6 +54,7 @@ function si_int() {
       mR = 1;
       break;
   }
+  var mT;
   switch (inputs[4].value) {
     case "Months":
       mT = 12;
@@ -87,6 +89,7 @@ function ci_int() {
     inputs[6].value = "Input valid values";
     return;
   }
+  var mR, mT, cT;
   switch (inputs[2].value) {
     case "Monthly":
       mR = 12;
@@ -156,7 +159,6 @@ function mult_money() {
       mM = "year(s)";
       break;
   }
-  var P = +inputs[0].value;
   var R = +inputs[1].value / 100;
   var M = +inputs[3].value;
   var res;
