@@ -4,3 +4,17 @@ scss
 .sass-cache
 css/style.css.map
 .eslintrc.json
+.prettierrc
+Session.vim
+build.sh
+css
+dist
+games.html
+index.html
+index.php
+jokes-and-riddles.html
+js
+node_modules
+package-lock.json
+scss
+tags
